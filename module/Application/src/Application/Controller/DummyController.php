@@ -13,6 +13,12 @@ class DummyController extends AbstractActionController
 
     }
 
+    public function jsonAction() {
+        $view = new JsonModel();
+        $view->setVariable('foo',array('bar', 'bar1'));
+        return $view;
+    }
+
     public function editAction()
     {
         $kunde = new Dummy();
