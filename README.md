@@ -103,3 +103,11 @@ it should look something like below:
     }
 
 Restart the nginx, now you should be ready to go!
+
+Konfiguration
+-------------
+
+Datein im Ordner /config/autoload anpassen. Alle Dateien mit der Endung *.local.dist sind Vorlagen. 
+Dies kopieren in *.local.php und hierbei die Einstellungen der betreffenden *.global.php überschreiben.
+
+*.local.php Dateien werden von git ignoriert. Passworte und Zugangsdaten sollten hier abgespeichert werden.

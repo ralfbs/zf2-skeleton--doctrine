@@ -1,0 +1,22 @@
+<?php
+/**
+ *  Local Configuration Override
+ *
+ * This configuration override file is for overriding environment-specific and
+ * security-sensitive configuration information. Copy this file without the
+ * .dist extension at the end and populate values as needed.
+ *
+ * @NOTE: file like *.local.php are ignored from Git by default with the .gitignore included
+ * in ZendSkeletonApplication. This is a good practice, as it prevents sensitive
+ * credentials from accidentally being committed into version control.
+ */
+
+return array(
+    'phpSettings' => array(
+        'display_startup_errors'     => true,
+        'display_errors'             => true,
+        'max_execution_time'         => 60,
+        'date.timezone'              => 'Europe/Berlin',
+        'mbstring.internal_encoding' => 'UTF-8',
+    ),
+);
