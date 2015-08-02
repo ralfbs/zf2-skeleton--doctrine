@@ -1,40 +1,27 @@
-ZendSkeletonApplication
-=======================
+Zend Framework 2 
+================
 
-Introduction
+Einleitung
+----------
+Demoprojekt für Trainings und Schulungen von hr-interactive, Ralf Schneider
+
+
+Installation
 ------------
-This is a simple, skeleton application using the ZF2 MVC layer and module
-systems. This application is meant to be used as a starting place for those
-looking to get their feet wet with ZF2.
+### Projekt aus git clonen:
 
-Installation using Composer
----------------------------
+    `git clone https://ralfbs@github.com/ralfbs/zf2-skeleton--doctrine.git`
+   
+### Composer 
 
-The easiest way to create a new ZF2 project is to use [Composer](https://getcomposer.org/). If you don't have it already installed, then please install as per the [documentation](https://getcomposer.org/doc/00-intro.md).
+a) Composer installieren, falls noch nicht geschenen:
 
-
-Create your new ZF2 project:
-
-    composer create-project -n -sdev zendframework/skeleton-application path/to/install
-
-
-
-### Installation using a tarball with a local Composer
-
-If you don't have composer installed globally then another way to create a new ZF2 project is to download the tarball and install it:
-
-1. Download the [tarball](https://github.com/zendframework/ZendSkeletonApplication/tarball/master), extract it and then install the dependencies with a locally installed Composer:
-
-        cd my/project/dir
-        curl -#L https://github.com/zendframework/ZendSkeletonApplication/tarball/master | tar xz --strip-components=1
+    `curl -s https://getcomposer.org/installer | php`
     
+b) Composer ausführen, dependencies auflösen
+    
+    `php composer.phar install`
 
-2. Download composer into your proejct directory and install the dependencies:
-
-        curl -s https://getcomposer.org/installer | php
-        php composer.phar install
-
-If you don't have access to curl, then install Composer into your project as per the [documentation](https://getcomposer.org/doc/00-intro.md).
 
 Web server setup
 ----------------
