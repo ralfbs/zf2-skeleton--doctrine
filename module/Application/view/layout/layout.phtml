@@ -37,9 +37,15 @@
                     <a class="navbar-brand" href="<?php echo $this->url('home') ?>"><img src="<?php echo $this->basePath('img/zf2-logo.png') ?>" alt="Zend Framework 2"/>&nbsp;<?php echo $this->translate('Skeleton Application') ?></a>
                 </div>
                 <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
-                    </ul>
+                    <?php
+                    // @see http://framework.zend.com/manual/current/en/modules/zend.navigation.view.helper.menu.html
+                    echo $this->navigation('navigation')
+                        ->menu()
+                        ->setMinDepth(0)
+                        ->setMaxDepth(0)
+                        ->setUlClass('nav navbar-nav')
+                        // ->setPartial('partial/navigation.phtml');
+                    ?>
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
